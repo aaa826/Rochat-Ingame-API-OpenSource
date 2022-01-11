@@ -37,7 +37,7 @@ function TextBox(Text, PlaceHolderText, Page, callback)
     TextBox.TextColor = themes.TextColor
     TextBox.PlaceholderText = PlaceholderText
     UIS.InputBegan:Connect(function(KeyCode)
-        if KeyCode.KeyCode = Enum.KeyCode.Enter then
+        if KeyCode.KeyCode = Enum.KeyCode.Return then
             pcall(callback)
         end
     end)
